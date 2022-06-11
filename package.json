@@ -1,0 +1,54 @@
+{
+  "name": "init-hardhat-playground",
+  "description": "EVM script by Hardhat",
+  "version": "1.0.0",
+  "scripts": {
+    "prettier-config": "prettier '*/**/*.{sol,json}'",
+    "prettier:check": "yarn prettier-config --check",
+    "prettier:fix": "yarn prettier-config --write",
+    "eslint:check": "eslint '*/**/*.{js,ts}' '*.{js,ts}'",
+    "eslint:fix": "yarn eslint:check --fix",
+    "format:check": "yarn prettier:check && yarn eslint:check",
+    "format": "yarn prettier:fix && yarn eslint:fix",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "script": "npx hardhat run scripts/main.ts --network "
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.4.2",
+    "@openzeppelin/contracts-upgradeable": "4.4.2",
+    "dotenv": "11.0.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "2.0.5",
+    "@types/chai": "4.2.22",
+    "@types/chai-as-promised": "7.1.4",
+    "@types/mocha": "9.0.0",
+    "@types/sinon": "10.0.5",
+    "@typescript-eslint/eslint-plugin": "5.1.0",
+    "@typescript-eslint/parser": "5.1.0",
+    "chai": "4.3.4",
+    "chai-as-promised": "7.1.1",
+    "eslint": "7.12.1",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.0.0",
+    "ethereum-waffle": "3.4.0",
+    "ethers": "5.5.3",
+    "hardhat": "2.9.3",
+    "hardhat-gas-reporter": "1.0.8",
+    "prettier": "2.5.1",
+    "prettier-plugin-solidity": "1.0.0-beta.19",
+    "solidity-coverage": "0.7.17",
+    "ts-node": "10.4.0",
+    "tsconfig-paths": "3.11.0",
+    "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "ansi-regex": "3.0.1",
+    "async": "2.6.4",
+    "minimist": "1.2.6"
+  }
+}
