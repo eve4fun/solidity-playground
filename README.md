@@ -1,1 +1,1 @@
-# Solidity Project Basic Setup with Eslint
+# Solidity - Playground 
