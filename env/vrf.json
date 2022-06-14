@@ -1,0 +1,20 @@
+{
+    "v2": {
+        "avalanche": {
+            "mainnet": {
+                "address": "0x2eD832Ba664535e5886b75D64C46EB9a228C2610",
+                "gweiKeyHash": {
+                    "200": "0x83250c5584ffa93feb6ee082981c5ebe484c865196750b39835ad4f13780435d",
+                    "500": "0x89630569c9567e43c4fe7b1633258df9f2531b62f2352fa721cf3162ee4ecb46",
+                    "1000": "0x06eb0e2ea7cca202fc7c8258397a36f33d88568d2522b37aaa3b14ff6ee1b696"
+                }
+            },
+            "fuji": {
+                "address": "0x2eD832Ba664535e5886b75D64C46EB9a228C2610",
+                "gweiKeyHash": {
+                    "300": "0x354d2f95da55398f44b7cff77da56283d9c6c829a4bdf1bbcaf2ad6a4d081f61"
+                }
+            }
+        }
+    }
+}
