@@ -4,7 +4,7 @@ import BigNumber from "bignumber.js";
 import {
   getTransactionFee,
   getMockExternalContract,
-} from "./test-util";
+} from "../test-util";
 import { AddressZero } from "@ethersproject/constants";
 import { ethers } from "hardhat";
 import { Contract, Signer } from "ethers";
