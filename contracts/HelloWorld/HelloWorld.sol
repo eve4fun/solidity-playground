@@ -9,6 +9,8 @@ contract HelloWorld is Ownable, ReentrancyGuard {
     using SafeERC20 for IERC20;
     address public addressToStore;
 
+    event Message(address indexed sender, string msg);
+    
     receive() external payable {}
 
     function testSomething(address _addressToStore) external nonReentrant returns (address) {
@@ -18,5 +20,9 @@ contract HelloWorld is Ownable, ReentrancyGuard {
 
     function testRevert() external nonReentrant {
         revert("HelloWorld:testRevert: should XXXXXXX some reason for explain");
+    }
+
+    function saveMessage(string memory msg) external nonReentrant {
+        emit Message(msg.sender, msg);
     }
 }
