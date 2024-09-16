@@ -1,4 +1,4 @@
-# Solidity - Playground 
- - Hello World
- - Chain VRF function test
+# Solidity - Playground
+- Hello World
+- Chain VRF function test
  
